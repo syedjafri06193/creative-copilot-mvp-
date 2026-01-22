@@ -1,0 +1,24 @@
+{
+  "name": "@sensei/copilot-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"electronmon\"",
+    "build": "vite build",
+    "electronmon": "tsx watch electron/main.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "electron": "^31.2.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.3"
+  }
+}
