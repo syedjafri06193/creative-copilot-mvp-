@@ -1,17 +1,20 @@
-# Creative Co-Pilot (MVP)
+# SENSEI — AI Copilot for Editing + Motion Graphics
 
-An AI-assisted editing plugin that compares your current edit
-against a reference moodboard and provides creative feedback
-on pacing and color.
+SENSEI connects to professional editing and motion-graphics software to provide real-time creative suggestions,
+automation, and intelligent enhancements:
+- Emotion-aware color grade suggestions
+- Context-aware transitions
+- Rhythm-synced keyframe snapping to soundtrack beats
+- Shot-aware VFX preset recommendations
 
-## Features
-- Premiere Pro panel
-- Upload reference video
-- Automated visual analysis
-- Human-readable feedback
+## Monorepo Layout
+- `service/` — FastAPI realtime suggestion engine (WebSocket)
+- `apps/copilot-desktop/` — Electron + React desktop UI
+- `adapters/` — Host integrations (mock host included)
 
-## Run Backend
+## Quickstart (Demo)
+Requirements: Node 18+, Python 3.11+
+
+### 1) Start AI service + mock host
 ```bash
-cd backend
-pip install -r requirements.txt
-python app.py
+docker-compose up --build
