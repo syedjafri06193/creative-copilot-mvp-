@@ -1,0 +1,12 @@
+[project]
+name = "sensei-service"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.115.0",
+  "uvicorn[standard]==0.30.6",
+  "pydantic==2.8.2"
+]
+
+[tool.uvicorn]
+factory = false
